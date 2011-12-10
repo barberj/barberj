@@ -1,0 +1,12 @@
+exit()
+y
+test = tst.CandidateTest.query.first()
+test
+exit
+exit()
+y
+exit()
+y
+exit
+exit()
+y
