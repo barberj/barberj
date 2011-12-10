@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-pytdiction"]
 	path = .vim/bundle/vim-pytdiction
 	url = https://github.com/vim-scripts/Pydiction.git
+[submodule "ssh"]
+	path = .ssh
+	url = git@github.com:barberj/ssh.git
