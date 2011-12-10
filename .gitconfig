@@ -1,0 +1,15 @@
+[user]
+    name = barberj
+    email = barber.justin@gmail.com
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[core]
+    autocrlf = false
+    filemode = false
+
+[branch]
+	autosetupmerge = true
