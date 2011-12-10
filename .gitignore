@@ -4,5 +4,6 @@
 *.swp
 *.sublime-project
 *.sublime-workspace
-.viminfo
-
+/.viminfo
+/.ipython/db
+/.ipython/history
