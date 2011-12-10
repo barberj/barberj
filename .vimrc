@@ -40,3 +40,10 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 let g:pydiction_location = '/home/jbarber/.vim/bundle/pydiction-1.2/plugin/complete-dict'
 " enable loading the plugin files, (filetype plugin indent on) enable loading the indent file
 filetype plugin on
+
+" no backup files
+set nobackup
+" no backup file while editing
+set nowritebackup
+" no swap files
+set noswapfile
