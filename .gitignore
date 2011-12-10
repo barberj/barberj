@@ -1,0 +1,8 @@
+*.pyc
+*.log
+*.swp
+*.swp
+*.sublime-project
+*.sublime-workspace
+.viminfo
+
