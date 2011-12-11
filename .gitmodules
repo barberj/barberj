@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/vim-sparkup"]
 	path = .vim/bundle/vim-sparkup
 	url = https://github.com/kogakure/vim-sparkup.git
+[submodule ".vim/bundle/vim-ragtag"]
+	path = .vim/bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
