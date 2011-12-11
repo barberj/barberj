@@ -47,3 +47,9 @@ set nobackup
 set nowritebackup
 " no swap files
 set noswapfile
+
+" command line mappings
+cmap Q q
+cmap W w
+cmap WQ wq
+cmap Vsp vsplit
