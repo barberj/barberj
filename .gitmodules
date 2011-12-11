@@ -22,3 +22,12 @@
 [submodule "ssh"]
 	path = .ssh
 	url = git@github.com:barberj/ssh.git
+[submodule ".vim/bundle/vim-matchit"]
+	path = .vim/bundle/vim-matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule ".vim/bundle/vim-surrond"]
+	path = .vim/bundle/vim-surrond
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/vim-repeat"]
+	path = .vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
