@@ -53,3 +53,4 @@ cmap Q q
 cmap W w
 cmap WQ wq
 cmap Vsp vsplit
+cmap VSP vsplit
