@@ -7,3 +7,5 @@
 /.viminfo
 /.ipython
 /.bash_history
+/.mysql_history
+/.vim/.netrwhist
