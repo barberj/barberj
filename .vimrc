@@ -54,3 +54,5 @@ cmap W w
 cmap WQ wq
 cmap Vsp vsplit
 cmap VSP vsplit
+
+autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
