@@ -27,6 +27,9 @@ set ruler
 " Ignore Case when searching
 set ignorecase
 
+" set the file format for line endings
+" set ffs=unix
+
 "colorscheme murphy
 "colorscheme desert
 hi Comment ctermfg=blue
@@ -55,4 +58,8 @@ cmap WQ wq
 cmap Vsp vsplit
 cmap VSP vsplit
 
+" strip extra space off the end of lines
 autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" convert remove dos line endings
+autocmd FileType python autocmd BufWritePre <buffer> :%s///e
