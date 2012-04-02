@@ -1,5 +1,7 @@
-source ~/.git-completion.sh
 # http://nathanhoad.net/git-bash-tab-completions-and-a-cool-prompt
+# http://stackoverflow.com/questions/4569463/autocomplete-git-in-mac-os-not-working
+# https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
+source ~/.git-completion.sh
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }
