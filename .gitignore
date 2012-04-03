@@ -27,3 +27,4 @@
 /.python-eggs
 /.pgpass
 /.psql_history
+/.erlang.cookie
