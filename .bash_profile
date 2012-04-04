@@ -14,6 +14,18 @@ fi
 #        export PATH=/~/bin:$PATH
 #fi
 
+# add usr specific executables
+if [ -d /usr/local/sbin ]
+    then
+        export PATH=$PATH:/usr/local/sbin
+fi
+
+if [ -d /usr/local/lib/node_modules ]
+    then
+        export PATH=$PATH:/usr/local/lib/node_modules
+fi
+
+
 # http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal
 # override the vim in the terminal
 alias vim='mvim -v'
