@@ -28,3 +28,6 @@
 /.pgpass
 /.psql_history
 /.erlang.cookie
+/.gnupg
+/.npm
+/.ipython
