@@ -14,15 +14,18 @@ fi
 #        export PATH=/~/bin:$PATH
 #fi
 
+# note on putting local paths before system path
+# http://daniel.hepper.net/blog/2011/02/change-order-of-path-entries-on-mac-os-x/
+
 # add usr specific executables
 if [ -d /usr/local/sbin ]
     then
-        export PATH=$PATH:/usr/local/sbin
+        export PATH=/usr/local/sbin:$PATH
 fi
 
 if [ -d /usr/local/lib/node_modules ]
     then
-        export PATH=$PATH:/usr/local/lib/node_modules
+        export PATH=/usr/local/lib/node_modules:$PATH
 fi
 
 
