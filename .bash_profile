@@ -59,4 +59,4 @@ if [ $BOTO_CONFIG ]
 fi
 
 # add files for database maintenance
-source ~/Dropbox/Pictage/pictage_utils/dbs.sh
+source ~/Dropbox/Pictage/utils/dbs.sh
