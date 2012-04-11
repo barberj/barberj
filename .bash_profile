@@ -57,3 +57,6 @@ if [ $BOTO_CONFIG ]
     then 
         export BOTO_CONFIG=$(cygpath $BOTO_CONFIG)
 fi
+
+# add files for database maintenance
+source ~/Dropbox/Pictage/pictage_utils/dbs.sh
