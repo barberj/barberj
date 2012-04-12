@@ -27,6 +27,10 @@ set ruler
 " Ignore Case when searching
 set ignorecase
 
+" If you take time to put case into search, lets honor by searching for case
+" match
+set smartcase
+
 " set the file format for line endings
 " set ffs=unix
 
@@ -40,14 +44,16 @@ set noeb vb t_vb=
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
-let g:pydiction_location = '/home/jbarber/.vim/bundle/pydiction-1.2/plugin/complete-dict'
+let g:pydiction_location = '~/.vim/bundle/pydiction-1.2/plugin/complete-dict'
 " enable loading the plugin files, (filetype plugin indent on) enable loading the indent file
 filetype plugin on
 
 " no backup files
 set nobackup
+
 " no backup file while editing
 set nowritebackup
+
 " no swap files
 set noswapfile
 
@@ -63,3 +69,8 @@ cmap VSP vsplit
 
 " convert remove dos line endings
 " autocmd FileType python autocmd BufWritePre <buffer> :%s///e
+
+" i am never gonna edit compiled files, don't show me them
+let NERDTreeIgnore=['\.pyc']
+
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
