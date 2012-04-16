@@ -60,3 +60,6 @@ fi
 
 # add files for database maintenance
 source ~/Dropbox/Pictage/utils/dbs.sh
+
+# grep options
+export GREP_OPTIONS='--color=auto --exclude=*.pyc'
