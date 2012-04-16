@@ -17,3 +17,11 @@
 
 [branch]
 	autosetupmerge = true
+
+# http://jeetworks.org/node/90
+# http://www.silverwareconsulting.com/index.cfm/2010/6/21/Comparing-Files-from-Different-Branches-with-Git-Difftool
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
