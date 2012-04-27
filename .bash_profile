@@ -28,6 +28,11 @@ if [ -d /usr/local/lib/node_modules ]
         export PATH=/usr/local/lib/node_modules:$PATH
 fi
 
+# virtualenvwrapper environment home directory
+if [ -d ~/Envs ]
+    then
+        export WORKON_HOME=~/Envs
+fi
 
 # http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal
 # override the vim in the terminal
