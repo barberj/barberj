@@ -3,8 +3,7 @@
 # https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
 
 # file for git auto completion
-if [ -f ~/.git-completion.sh ]
-    then
+if [ -f ~/.git-completion.sh ]; then
         source ~/.git-completion.sh
 fi
 
@@ -18,20 +17,24 @@ fi
 # http://daniel.hepper.net/blog/2011/02/change-order-of-path-entries-on-mac-os-x/
 
 # add usr specific executables
-if [ -d /usr/local/sbin ]
-    then
+if [ -d /usr/local/sbin ]; then
         export PATH=/usr/local/sbin:$PATH
 fi
 
-if [ -d /usr/local/lib/node_modules ]
-    then
+if [ -d /usr/local/lib/node_modules ]; then
         export PATH=/usr/local/lib/node_modules:$PATH
 fi
 
+
 # virtualenvwrapper environment home directory
-if [ -d ~/Envs ]
-    then
-        export WORKON_HOME=~/Envs
+if [ -d ~/Dropbox/shootq/env ]; then
+        export WORKON_HOME=~/Dropbox/shootq/env
+        export WORKON_SRC=~/Dropbox/shootq/src
+        export PIP_VIRTUALENV_BASE=$WORKON_HOME
+        export PIP_RESPECT_VIRTUALENV=true
+fi
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 # http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal
@@ -58,3 +61,4 @@ source ~/Dropbox/Pictage/utils/dbs.sh
 # grep options
 # http://unix.stackexchange.com/questions/8214/is-there-a-rc-configuration-file-for-grep-egrep-egreprc
 export GREP_OPTIONS='--color=auto --exclude=*.pyc'
+

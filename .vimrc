@@ -58,9 +58,9 @@ set nowritebackup
 set noswapfile
 
 " command line mappings
-cmap Q q
-cmap W w
-cmap WQ wq
+"cmap Q q
+"cmap W w
+"cmap WQ wq
 cmap Vsp vsplit
 cmap VSP vsplit
 

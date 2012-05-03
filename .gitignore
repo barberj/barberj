@@ -36,3 +36,5 @@
 /.cups
 /Envs
 /.subversion
+/.tox
+/.virtualenvs
