@@ -40,7 +40,6 @@ fi
 # bash complete for rabbitmq
 if [ -e .rabbitmqadmin ]; then
     source .rabbitmqadmin
-    alias rabbitmqadmin='rabbitmqadmin -u root -p shootq4u'
 fi
 
 # http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal
