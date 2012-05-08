@@ -38,3 +38,4 @@
 /.subversion
 /.tox
 /.virtualenvs
+/.rediscli_history
