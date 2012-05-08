@@ -21,6 +21,7 @@ if [ -d /usr/local/sbin ]; then
         export PATH=/usr/local/sbin:$PATH
 fi
 
+# javascript
 if [ -d /usr/local/lib/node_modules ]; then
         export PATH=/usr/local/lib/node_modules:$PATH
 fi
@@ -62,10 +63,12 @@ function parse_git_branch {
 
 export PS1='\n\[\e[36;1m\]\w\[\e[0m\] $(__git_ps1 "[\[\e[0;32m\]%s\[\e[0m\]\[\e[0;33m\]$(parse_git_dirty)\[\e[0m\]]")\n\$ \[\e[0m\]'
 
-export PYTHONPATH=~/Dropbox/Pictage/utils
 
-# add files for database maintenance
-source ~/Dropbox/Pictage/utils/dbs.sh
+if [ -d ~/Dropbox/Pictage/utils ]; then
+    # add files for database maintenance
+    export PYTHONPATH=~/Dropbox/Pictage/utils
+    source ~/Dropbox/Pictage/utils/dbs.sh
+fi
 
 # grep options
 # http://unix.stackexchange.com/questions/8214/is-there-a-rc-configuration-file-for-grep-egrep-egreprc
