@@ -73,7 +73,7 @@ fi
 # http://unix.stackexchange.com/questions/8214/is-there-a-rc-configuration-file-for-grep-egrep-egreprc
 export GREP_OPTIONS='--color=auto --exclude=*.pyc'
 
-# kill supervisord
+# supervisord helpers
 function superstop {
     typeset supervisordpid;
     supervisordpid=$(ps auxx | grep [s]uper | tr -s ' ' | cut -d ' ' -f 2);
@@ -84,4 +84,14 @@ function superstop {
     else
         echo 'Unable to get supervisord pid. Maybe it is not running';
     fi
+}
+
+function superstart {
+    typeset currentdir;
+    (
+        workon "atrium";
+        cd ..;
+        supervisord;
+        deactivate;
+    )
 }
