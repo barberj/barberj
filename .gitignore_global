@@ -6,7 +6,7 @@
 *.exe
 *.o
 *.so
-*.py[c|o]
+*.py[co]
 
 # Packages #
 ############
@@ -39,3 +39,6 @@ Thumbs.db
 #######################
 stage.ini
 development.ini
+
+stage.py
+development.py
