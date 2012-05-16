@@ -42,3 +42,7 @@ development.ini
 
 stage.py
 development.py
+
+# History files #
+#################
+.dbshell # mongo
