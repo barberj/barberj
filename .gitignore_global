@@ -45,4 +45,5 @@ development.py
 
 # History files #
 #################
-.dbshell # mongo
+# mongo history
+.dbshell
