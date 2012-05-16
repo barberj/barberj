@@ -74,10 +74,14 @@ fi
 export GREP_OPTIONS='--color=auto --exclude=*.pyc'
 
 # supervisord helpers
+function superrunning {
+    echo `ps auxx | grep [s]uper | tr -s ' ' | cut -d ' ' -f 2`;
+    return 0
+}
+
 function superstop {
     typeset supervisordpid;
-    supervisordpid=$(ps auxx | grep [s]uper | tr -s ' ' | cut -d ' ' -f 2);
-
+    supervisordpid=$(superrunning);
     if [ "$supervisordpid" ]; then
         echo "Found supervisord running on $supervisordpid pid. Stopping...";
         kill $supervisordpid;
@@ -87,11 +91,29 @@ function superstop {
 }
 
 function superstart {
-    typeset currentdir;
-    (
-        workon "atrium";
-        cd ..;
-        supervisord;
-        deactivate;
-    )
+    supervisordpid=$(superrunning);
+    if [ ! "$supervisordpid" ]; then
+        echo "Starting supervisord"
+        typeset currentdir;
+        (
+            workon "atrium";
+            cd ..;
+            supervisord;
+            deactivate;
+        )
+    else
+        echo "Found supervisord running on $supervisordpid pid.";
+    fi
+}
+
+function pictagestart {
+    superstart;
+    redisstart;
+    rmqstart;
+}
+
+function pictagestop {
+    superstop;
+    redisstop;
+    rmqstop;
 }
