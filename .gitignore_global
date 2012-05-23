@@ -8,6 +8,8 @@
 *.so
 *.py[co]
 data/
+.tox/
+*egg-info/
 
 # Packages #
 ############
@@ -42,6 +44,7 @@ stage.ini
 development.ini
 shell.ini
 test.ini
+justin.ini
 
 stage.py
 development.py
@@ -52,3 +55,4 @@ test.py
 #################
 # mongo history
 .dbshell
+.sh_history
