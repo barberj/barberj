@@ -58,3 +58,4 @@ test.py
 # mongo history
 .dbshell
 .sh_history
+*.bck
