@@ -12,6 +12,7 @@ data/
 *egg-info/
 build/
 dist/
+__pycache__
 
 # Packages #
 ############
@@ -46,12 +47,13 @@ stage.ini
 development.ini
 shell.ini
 test.ini
-justin.ini
+local.ini
 
 stage.py
 development.py
 shell.py
 test.py
+local.py
 
 # History files #
 #################
