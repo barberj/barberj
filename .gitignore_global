@@ -54,6 +54,7 @@ development.py
 shell.py
 test.py
 local.py
+/.pypirc
 
 # History files #
 #################
