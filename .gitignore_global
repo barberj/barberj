@@ -62,3 +62,4 @@ local.py
 .dbshell
 .sh_history
 *.bck
+.sqlite_history
