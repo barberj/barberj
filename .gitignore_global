@@ -13,6 +13,7 @@ data/
 build/
 dist/
 __pycache__
+.pylint.d/
 
 # Packages #
 ############
@@ -30,6 +31,7 @@ __pycache__
 # Logs and databases #
 ######################
 *.log
+*.log.*
 *.sql
 *.sqlite
 
