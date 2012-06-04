@@ -70,7 +70,39 @@ cmap VSP vsplit
 " convert remove dos line endings
 " autocmd FileType python autocmd BufWritePre <buffer> :%s///e
 
+" NERDTree
 " i am never gonna edit compiled files, don't show me them
 let NERDTreeIgnore=['\.pyc']
 
+"To define a mapping which uses the "mapleader" variable, the special string
+"<Leader>" can be used.  It is replaced with the string value of "mapleader".
+"If "mapleader" is not set or empty, a backslash is used instead.  
+"Example:
+"    :map <Leader>A  oanother line <Esc>
+"    Works like:
+"        :map \A  oanother line <Esc>
+"        But after:
+"            :let mapleader = ","
+"            It works like:
+"                :map ,A  oanother line <Esc>
+"
+"                Note that the value of "mapleader" is used at the moment the
+"                mapping is
+"                defined.  Changing "mapleader" after that has no effect for
+"                already defined
+"                mappings.
+" open
+map <leader>n :NERDTreeToggle<CR>
+
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" https://github.com/sontek/dotfiles/blob/master/_vimrc
+" ctrl-jklm  changes to that split
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+let g:pep8_map='<leader>8'
+let g:pyflakes_use_quickfix = 0
+let g:pep8_quickfix = 0
