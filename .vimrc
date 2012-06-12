@@ -73,6 +73,7 @@ cmap VSP vsplit
 " NERDTree
 " i am never gonna edit compiled files, don't show me them
 let NERDTreeIgnore=['\.pyc']
+let NERDTreeShowHidden=1
 
 "To define a mapping which uses the "mapleader" variable, the special string
 "<Leader>" can be used.  It is replaced with the string value of "mapleader".
@@ -106,3 +107,5 @@ map <c-h> <c-w>h
 let g:pep8_map='<leader>8'
 let g:pyflakes_use_quickfix = 0
 let g:pep8_quickfix = 0
+
+map <leader>b :Gblame<CR>
